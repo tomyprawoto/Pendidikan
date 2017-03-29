@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="politekpos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="uang_kuliah"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="uang_kuliah">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jurusan"/>
+                <xs:element ref="biaya"/>
+                <xs:element ref="program"/>
+                <xs:element ref="akreditasi"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jurusan">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="kode" use="required" type="xs:integer"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biaya">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:integer">
+
+    			<xs:maxInclusive value="2000000"></xs:maxInclusive>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+    <xs:element name="program">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="study" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="study">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="kode" use="required" type="xs:integer"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="akreditasi" type="xs:NCName"/>
+</xs:schema>

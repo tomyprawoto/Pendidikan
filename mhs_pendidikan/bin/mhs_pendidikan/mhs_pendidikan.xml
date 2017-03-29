@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<politekpos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mhs_pendidikan.xsd">
+<uang_kuliah>
+<jurusan kode="1">tenik_informatika</jurusan>
+<biaya>1000000</biaya>
+<program>
+<study kode="001">D3</study>
+<study kode="002">D4</study>
+</program>
+<akreditasi>B</akreditasi>
+</uang_kuliah>
+	<uang_kuliah>
+		<jurusan kode="2">logistik_bisnis</jurusan>
+		<biaya>1500000</biaya>
+		<program>
+			<study kode="001">D3</study>
+			<study kode="002">D4</study>
+		</program>
+		<akreditasi>A</akreditasi>
+</uang_kuliah>
+	<uang_kuliah>
+		<jurusan kode="3">manajemen_transportasi</jurusan>
+		<biaya>200000</biaya>
+		<program>
+			<study kode="001">D3</study>
+			<study kode="002">D4</study>
+		</program>
+		<akreditasi>B</akreditasi>
+</uang_kuliah>
+	<uang_kuliah>
+		<jurusan kode="4">manajemen_informatika</jurusan>
+		<biaya>1700000</biaya>
+		<program>
+			<study kode="001">D3</study>
+			<study kode="002">D4</study>
+		</program>
+		<akreditasi>A</akreditasi>
+</uang_kuliah>
+			<uang_kuliah>
+		<jurusan kode="5">manajemen_bisnis</jurusan>
+		<biaya>1600000</biaya>
+		<program>
+			<study kode="001">D3</study>
+			<study kode="002">D4</study>
+		</program>
+		<akreditasi>B</akreditasi>
+</uang_kuliah>
+</politekpos>
